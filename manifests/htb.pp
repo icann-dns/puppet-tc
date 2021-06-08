@@ -50,8 +50,8 @@ define tc::htb (
   }]]     $classes,
   Hash[Integer, Struct[{
     prio  => Integer,
-    src   => Optional[Stdlib::Ipv4],
-    dst   => Optional[Stdlib::Ipv4],
+    src   => Optional[Stdlib::IP::Address::V4],
+    dst   => Optional[Stdlib::IP::Address::V4],
     sport => Optional[Stdlib::Port],
     dport => Optional[Stdlib::Port],
     flow  => Integer
